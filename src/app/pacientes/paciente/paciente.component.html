@@ -1,0 +1,36 @@
+<div class="item">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">nombre</th>
+        <th scope="col">apellidos</th>
+        <th scope="col">telefono</th>
+        <th scope="col">direccion</th>
+        <th scope="col">fecha nacimiento</th>
+        <th scope="col">fecha inicio</th>
+        <th scope="col">correo</th>
+        <th scope="col">sexo</th>
+        <th scope="col">terapeuta</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr
+      *ngFor="let pacienteDatos of pacientes; let i = index">
+        <th scope="row">1
+        </th>
+        
+        <td>{{pacienteDatos.nombre}}</td>
+        <td>{{pacienteDatos.apellidos}}</td>
+        <td>{{pacienteDatos.telefono}}</td>
+        <td>{{pacienteDatos.direccion}}</td>
+        <td>{{pacienteDatos.fechaNacimiento}}</td>
+        <td>{{pacienteDatos.fechaInicio}}</td>
+        <td>{{pacienteDatos.correo}}</td>
+        <td>{{pacienteDatos.sexo}}</td>
+        <td>{{pacienteDatos.terapeuta.nombre}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+

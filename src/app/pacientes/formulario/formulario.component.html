@@ -1,0 +1,97 @@
+<form class="item">
+  <div class="form-group col-md-2">
+    <label for="nombre" class="sr-only">
+      Nombre:
+    </label>
+    <input
+        type="text"
+        name="nombre"
+        id="nombre"
+      [(ngModel)]="nombreInput"
+      />
+
+      <label for="apellido" class="sr-only">
+        Apelidos:
+      </label>
+      <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        [(ngModel)]="apellidosInput"
+      />
+
+      <label for="tel" class="sr-only">
+        Telefono:
+      </label>
+      <input
+        type="text"
+        name="tel"
+        id="tel"
+        [(ngModel)]="telInput"
+      />
+
+      <label for="dir" class="sr-only">
+        Dirección:
+      </label>
+      <input
+      type="text"
+      name="dir"
+      id="dir"
+      [(ngModel)]="dirInput"
+    />
+
+  <label for="fechaN" class="sr-only">
+      Fecha de Nacimiento:
+    </label>
+    <input
+    type="text"
+    name="fechaN"
+    id="fechaN"
+    [(ngModel)]="fechaNInput"
+    />
+
+    <label for="fechaIni" class="sr-only">
+      Fecha de Inicio:
+    </label>
+    <input
+    type="text"
+    name="fechaIni"
+    id="fechaIni"
+    [(ngModel)]="fechaIniInput"
+    />
+
+    <label for="correo" class="sr-only">
+      Correo:
+    </label>
+    <input
+    type="text"
+    name="correo"
+    id="correo"
+    [(ngModel)]="correoInput"
+  />
+
+    <label for="sexo" class="sr-only">
+      Sexo:
+    </label>
+    <input
+    type="text"
+    name="sexo"
+    id="sexo"
+    [(ngModel)]="sexoInput"
+  />
+
+  <label for="terapeuta" class="sr-only">
+    Terapeuta:
+  </label>
+  <input
+  type="text"
+  name="tera"
+  id="tera"
+  [(ngModel)]="terapeutaInput"
+/>
+  </div>
+  <button type="submit"
+(click)="agregarPaciente()">
++
+</button>
+  </form>
